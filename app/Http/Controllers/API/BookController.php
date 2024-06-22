@@ -6,15 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use App\Models\Book;
+use App\Models\book;
 use OpenApi\Annotations as OA;
 
 /**
- * Class BookController.
+ * Class bookController.
  *
  * @author  Theodorus <Theodorus.42202107@ukrida.ac.id>
  */
-class BookController extends Controller
+class bookController extends Controller
 {
     /**
      * @OA\Get(
@@ -86,7 +86,7 @@ class BookController extends Controller
             $page                 = $data['filter']['_page']  = (@$data['filter']['_page'] ? intval($data['filter']['_page']) : 1);
             $limit                = $data['filter']['_limit'] = (@$data['filter']['_limit'] ? intval($data['filter']['_limit']) : 1000);
             $offset               = ($page?($page-1)*$limit:0);
-            $data['products']     = Book::whereRaw('1 = 1');
+            $data['products']     = book::whereRaw('1 = 1');
             
             if($request->get('_search')){
                 $data['products'] = $data['products']->whereRaw('(LOWER(title) LIKE "%'.strtolower($request->get('_search')).'%" OR LOWER(author) LIKE "%'.strtolower($request->get('_search')).'%")');
@@ -150,7 +150,7 @@ class BookController extends Controller
      *         required=true,
      *         description="Request body description",
      *         @OA\JsonContent(
-     *             ref="#/components/schemas/Book",
+     *             ref="#/components/schemas/book",
      *             example={"title": "Eating Clean", "author": "Inge Tumiwa-Bachrens", "publisher": "Kawan Pustaka", "publication_year": "2016", 
      *                      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/book/1482170055i/33511107.jpg", 
      *                      "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu ‘sehat’ bagi tubuh kita.", 
@@ -170,7 +170,7 @@ class BookController extends Controller
             if ($validator->fails()) {
                 throw new HttpException(400, $validator->messages()->first());
             }
-            $book = new Book;
+            $book = new book;
             $book->fill($request->all())->save();
             return $book;
 
@@ -214,7 +214,7 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        $book = Book::find($id);
+        $book = book::find($id);
         if(!$book){
             throw new HttpException(404, 'Item not found');
         }
@@ -256,7 +256,7 @@ class BookController extends Controller
      *         required=true,
      *         description="Request body description",
      *         @OA\JsonContent(
-     *             ref="#/components/schemas/Book",
+     *             ref="#/components/schemas/book",
      *             example={"title": "Eating Clean", "author": "Inge Tumiwa-Bachrens", "publisher": "Kawan Pustaka", "publication_year": "2016", 
      *                      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/book/1482170055i/33511107.jpg", 
      *                      "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu ‘sehat’ bagi tubuh kita.", 
@@ -268,7 +268,7 @@ class BookController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $book = Book::find($id);
+        $book = book::find($id);
         if(!$book){
             throw new HttpException(404, 'Item not found');
         }
@@ -325,7 +325,7 @@ class BookController extends Controller
      */
     public function destroy($id)
     {
-        $book = Book::find($id);
+        $book = book::find($id);
         if(!$book){
             throw new HttpException(404, 'Item not found');
         }

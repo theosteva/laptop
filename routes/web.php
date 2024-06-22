@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookController;
+use App\Http\Controllers\API\bookController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -25,6 +25,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::post('/add', function () {
             return view('pages.admin.book.add');
         });
-        Route::post('/edit/{id}', [BookController::class, 'form_update']);
+        Route::post('/edit/{id}', [bookController::class, 'form_update']);
     });
 });

@@ -34,7 +34,7 @@ function getDataByWindowUrlKey(){
           $('.product-add-to-cart-is-disabled').show();
         }
         // tag
-        let collectionOfTag = ['Book','EBook','Best Seller','Fiction','Education','Literature','Classics','Real Event','Young Adult','Religion','Health','Comic','Horror','Poem','Filmed','Encyclopedia','In English','In Indonesian'];
+        let collectionOfTag = ['book','Ebook','Best Seller','Fiction','Education','Literature','Classics','Real Event','Young Adult','Religion','Health','Comic','Horror','Poem','Filmed','Encyclopedia','In English','In Indonesian'];
         let selectedTags    = collectionOfTag.sort(() => .5 - Math.random()).slice(0, 4); // only get 4, randomly, from collectionOfTag
         template = '';
         for (let index = 0; index < selectedTags.length; index++) {

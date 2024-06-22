@@ -203,7 +203,7 @@
     align-items: center;
     background-size: cover;
     
-    @media #{$laptop-device}{
+    @media #{$book-device}{
         height: 900px;
     }
     
@@ -413,7 +413,7 @@
     align-items: center;
     background-size: cover;
     
-    @media #{$laptop-device}{
+    @media #{$book-device}{
         height: 600px;
     }
     
@@ -495,7 +495,7 @@
     align-items: center;
     background-size: cover;
     
-    @media #{$laptop-device}{
+    @media #{$book-device}{
         height: 700px;
     }
     
@@ -554,7 +554,7 @@
     .col-lg-12 {
         padding-left: 55px;
         padding-right: 55px;
-        @media #{$laptop-device} {
+        @media #{$book-device} {
             padding-left: 25px;
             padding-right: 25px;
         }
@@ -632,7 +632,7 @@
     align-items: center;
     background-size: cover;
     
-    @media #{$laptop-device}{
+    @media #{$book-device}{
         height: 800px;
     }
     
@@ -820,7 +820,7 @@
     align-items: center;
     background-size: cover;
     
-    @media #{$laptop-device}{
+    @media #{$book-device}{
         height: 600px;
     }
     

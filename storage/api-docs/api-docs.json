@@ -4,8 +4,8 @@
         "title": "My Rest API",
         "description": "Laravel project to practice developing Rest API with L5 Swagger OpenApi",
         "contact": {
-            "name": "Theodorus UKRIDA",
-            "email": "Theodorus.42202107@ukrida.ac.id"
+            "name": "Theodorus",
+            "email": "theodorus.422021017@ukrida.ac.id"
         },
         "version": "1.0",
         "x-logo": {
@@ -225,7 +225,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Book"
+                                "$ref": "#/components/schemas/book"
                             },
                             "example": {
                                 "title": "Eating Clean",
@@ -335,7 +335,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Book"
+                                "$ref": "#/components/schemas/book"
                             },
                             "example": {
                                 "title": "Eating Clean",
@@ -437,15 +437,15 @@
     },
     "components": {
         "schemas": {
-            "Book": {
-                "title": "Book model",
-                "description": "Book model",
+            "book": {
+                "title": "book model",
+                "description": "book model",
                 "required": [
                     "title",
                     "author"
                 ],
                 "xml": {
-                    "name": "Book"
+                    "name": "book"
                 }
             },
             "User": {

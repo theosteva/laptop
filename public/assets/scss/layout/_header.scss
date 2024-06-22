@@ -560,7 +560,7 @@
             @media #{$xl-device}{
                 margin: 0 22px;
             }
-            @media #{$laptop-device}{
+            @media #{$book-device}{
                 margin: 0 15px;
             }
             & > a {
@@ -776,7 +776,7 @@
         display: flex;
         justify-content: space-around;
 
-        @media #{$laptop-device}{
+        @media #{$book-device}{
             min-width: 900px;
         }
         @media #{$desktop-device}{
@@ -1043,7 +1043,7 @@
             @media #{$xl-device}{
                 margin: 0 22px;
             }
-            @media #{$laptop-device}{
+            @media #{$book-device}{
                 margin: 0 15px;
             }
             & > a {

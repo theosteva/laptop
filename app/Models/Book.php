@@ -10,20 +10,20 @@ use OpenApi\Annotations as OA;
 
 
 /**
- * Class Book.
+ * Class book.
  * 
  * @author  Theodorus <Theodorus.42202107@ukrida.ac.id>
  * 
  * @OA\Schema(
- *     description="Book model",
- *     title="Book model",
+ *     description="book model",
+ *     title="book model",
  *     required={"title", "author"},
  *     @OA\Xml(
- *         name="Book"
+ *         name="book"
  *     )
  * )
  */
-class Book extends Model
+class book extends Model
 {
     // use HasFactory;
     use SoftDeletes;

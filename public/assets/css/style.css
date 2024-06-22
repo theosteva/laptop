@@ -3731,7 +3731,7 @@ input[type=checkbox] {
   right: 15px;
   left: auto;
 }
-# .slick-arrow:hover, .hero-slider-7 .slick-arrow:hover, .hero-slider-13 .slick-arrow:hover, .hero-slider-four .slick-arrow:hover {
+#slick-arrow:hover, .hero-slider-7 .slick-arrow:hover, .hero-slider-13 .slick-arrow:hover, .hero-slider-four .slick-arrow:hover {
   color: #000000;
 }
 #product-preview .slick-arrow:hover:before, .hero-slider-7 .slick-arrow:hover:before, .hero-slider-13 .slick-arrow:hover:before, .hero-slider-four .slick-arrow:hover:before {

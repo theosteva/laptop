@@ -17,8 +17,8 @@
                                 <option value="harriman house">Harriman House</option>
                                 <option value="balai pustaka">Balai Pustaka</option>
                                 <option value="lentera dipantara">Lentera Dipantara</option>
-                                <option value="pan books">Pan Books</option>
-                                <option value="firefly books">Firefly Books</option>
+                                <option value="pan books">Pan books</option>
+                                <option value="firefly books">Firefly books</option>
                                 <option value="gramedia">Gramedia</option>
                                 <option value="scholastic">Scholastic</option>
                                 <option value="harper">Harper</option>
@@ -62,8 +62,8 @@
                         <div class="product-filter">
                             <h6 class="mb-20">Tags</h6>
                             <div class="blog-tagcloud">
-                                <a href="#" class="selected">Book</a>
-                                <a href="#">EBook</a>
+                                <a href="#" class="selected">book</a>
+                                <a href="#">Ebook</a>
                                 <a href="#">Best Seller</a>
                                 <a href="#">Fiction</a>
                                 <a href="#">Education</a>

@@ -10,7 +10,7 @@
         //     padding: 0 110px !important;
         // }
 
-        @media #{$laptop-device}{
+        @media #{$book-device}{
             padding: 0 100px;
         }
         @media #{$desktop-device}{
@@ -54,7 +54,7 @@
         //     padding: 0 110px !important;
         // }
 
-        @media #{$laptop-device}{
+        @media #{$book-device}{
             padding: 0 50px;
         }
         @media #{$desktop-device}{

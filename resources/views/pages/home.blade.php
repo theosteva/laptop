@@ -20,12 +20,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="about-us-content_6 text-center">
-                            <h2>Laptop Store</h2>
+                            <h2>Laptop&nbsp;&nbsp;Store</h2>
                             <p>
-                                <medium>
-                                Whether you're searching for cutting-edge tech, reliable workhorses, or hidden gems in the world of laptops, our meticulously curated collection offers something for every tech enthusiast. Our dedicated team is committed to helping you find the perfect device, and our inviting atmosphere encourages you to stay and explore. Join our community of tech aficionados and let us assist you. Visit us today and immerse yourself in the excitement of finding your ideal laptop.
-&#10084;
-                                </s>
+                                <small>
+                                Discover a curated selection of the latest tech innovations and reliable classics. Our team is here to help you find the perfect device in our inviting store. Join our community of tech enthusiasts and explore your next essential gadget with us today!
+                                </small>
                             </p>
                             <p class="mt-5">Find your window to the world! Or, even, <span class="text-color-primary">unlock hidden worlds, one page at a time!</span> 
                             </p>
@@ -138,3 +137,19 @@
 @section('addition_script')
     <script src="{{asset('pages/js/home.js')}}"></script>
 @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

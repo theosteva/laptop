@@ -6,10 +6,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="description" content="Find your window to the world!">
         <meta name="keywords" content="ecommerce,book">
-        <meta name="author" content="NIM-NAME">
+        <meta name="author" content="NAME">
 
         <title>@yield('title') | LaptopStore</title>
-        <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}">
+        <link rel="icon" type="image/x-icon" href="{{asset('assets/images/logo/logo.png')}}">
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendor/bootstrap.min.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendor/linearicons.min.css')}}">
